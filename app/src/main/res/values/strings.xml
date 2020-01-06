@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">usbkey</string>
+
+    <string name="getid">检查锁的ID号</string>
+    <string name="getversion">检查锁的版本号</string>
+    <string name="FindPort_2">查找指定的加密锁(使用普通算法一)</string>
+    <string name="FindPort_3">查找指定的加密锁(使用普通算法二)</string>
+    <string name="sWriteEx">加密运算(使用普通算法一)</string>
+    <string name="sWrite_2Ex">解密运算(使用普通算法一)</string>
+    <string name="sWriteEx_New">加密运算(使用普通算法二)</string>
+    <string name="sWrite_2Ex_New">解密运算(使用普通算法二)</string>
+    <string name="YReadString">读字符串</string>
+    <string name="YWriteString">写字符串</string>
+    <string name="YReadStringByLen">读字符串(带长度)</string>
+    <string name="YWriteStringByLen">写字符串(带长度)</string>
+    <string name="SetCal_2">设置增强算法密钥一</string>
+    <string name="EncString">字符串进行加密(增强算法一)</string>
+    <string name="Cal">二进制数据进行加密(增强算法一)</string>
+    <string name="SetCal_New">设置增强算法密钥二</string>
+    <string name="EncString_New">字符串进行加密(增强算法二)</string>
+    <string name="Cal_New">二进制数据进行加密(增强算法二)</string>
+    <string name="ReSet">初始化加密锁,只适用于版本为9及以上的锁</string>
+    <string name="USBFileRead">USB文件读取</string>
+    <string name="USBCopy">USB文件拷贝</string>
+    <color name="azure">#F0FFFF</color>
+    <color name="magenta">#FF00FF</color>
+</resources>

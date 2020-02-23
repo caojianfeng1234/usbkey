@@ -211,9 +211,9 @@ public class CopyPasteUtil {
                 if (progress > tempP) {
                     mProgress = progress;
                     fileVolumeText = fileVolume * progress / 100 + " MB/" + fileVolume + " MB";
-                    System.out.println("mprogress ----->" + mProgress);
-                    System.out.println("fileVolume ----->" + fileVolume);
-                    System.out.println("fileVolumeText ----->" + fileVolumeText);
+//                    System.out.println("mprogress ----->" + mProgress);
+//                    System.out.println("fileVolume ----->" + fileVolume);
+//                    System.out.println("fileVolumeText ----->" + fileVolumeText);
                 }
             }
             hasReadSize += sourcefile.getLength();

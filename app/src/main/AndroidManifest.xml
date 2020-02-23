@@ -5,16 +5,18 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />z
     <uses-permission
         android:name="android.hardware.usb.host"
         android:required="false" />
 
     <application>
         <activity
-            android:name="USBKEY_A6"
+            android:name="UsbKeyA6"
             android:icon="@drawable/logo"
-            android:label="USBKEY_A6 Launcher"
+            android:label="北斗秘钥"
+            android:launchMode="standard"
             android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

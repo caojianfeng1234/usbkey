@@ -32,13 +32,28 @@
         android:id="@+id/keyId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
         leon:LtextColor="@color/colorPrimary"
         leon:isShowRightText="true"
         leon:leftIcon="@drawable/keyimg"
         leon:leftIconSize="36dp"
-        leon:leftText="KEY芯片ID"
+        leon:leftText="密钥ID"
         leon:rightStyle="iconCheck"
-        android:layout_marginRight="1dp"
+        leon:rightText="请插入密钥"
+        leon:rightTextColor="@color/colorPrimaryDark"
+        leon:rightTextSize="14" />
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/openKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:LtextColor="@color/colorPrimary"
+        leon:isShowRightText="true"
+        leon:leftIcon="@drawable/useimg"
+        leon:leftIconSize="36dp"
+        leon:leftText="License授权"
+        leon:rightStyle="iconCheck"
+        leon:rightText="未授权"
         leon:rightTextColor="@color/colorPrimaryDark"
         leon:rightTextSize="14" />
 
@@ -50,7 +65,7 @@
         leon:isShowRightText="true"
         leon:leftIcon="@drawable/useimg"
         leon:leftIconSize="36dp"
-        leon:leftText="使用情况"
+        leon:leftText="北斗密钥"
         leon:rightStyle="iconCheck"
         leon:rightText="未知"
         leon:rightTextColor="@color/colorPrimaryDark"
@@ -80,19 +95,7 @@
         leon:leftIconSize="36dp"
         leon:leftText="复制文件"
         leon:rightStyle="iconCheck"
-        leon:rightTextColor="@color/colorPrimaryDark"
-        leon:rightTextSize="14" />
-
-    <com.leon.lib.settingview.LSettingItem
-        android:id="@+id/installMode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        leon:LtextColor="@color/colorPrimary"
-        leon:isShowRightText="true"
-        leon:leftIcon="@drawable/switchimg"
-        leon:leftIconSize="36dp"
-        leon:leftText="安装模式(手动/自动)"
-        leon:rightStyle="iconCheck"
+        leon:rightText="未知"
         leon:rightTextColor="@color/colorPrimaryDark"
         leon:rightTextSize="14" />
 </LinearLayout>

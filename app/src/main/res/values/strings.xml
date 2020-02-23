@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">usbkey</string>
+    <string name="app_name">北斗密钥</string>
 
     <string name="getid">检查锁的ID号</string>
     <string name="getversion">检查锁的版本号</string>

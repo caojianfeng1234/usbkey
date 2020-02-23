@@ -2,14 +2,11 @@ package com.wjw.usbkey.util;
 
 import android.content.Context;
 import android.hardware.usb.UsbDevice;
-
-import java.io.UnsupportedEncodingException;
-
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbInterface;
 import android.hardware.usb.UsbManager;
-import android.widget.Toast;
 
+import java.io.UnsupportedEncodingException;
 import java.util.concurrent.Semaphore;
 
 public class ASyunew6 {
@@ -784,7 +781,6 @@ public class ASyunew6 {
     public UsbDevice FindPort(int start) {
         int count = 0;
         lasterror = 0;
-        Toast.makeText(mContext, mUsbManager.getDeviceList().values().toString(), Toast.LENGTH_LONG).show();
         for (UsbDevice device : mUsbManager.getDeviceList().values()) {
             if (device != null && device.getVendorId() == VID && device.getProductId() == PID) {
 
@@ -1157,7 +1153,13 @@ public class ASyunew6 {
             e.printStackTrace();
         }
         try {
-            return new String(outb, "gb2312");
+            boolean isShow = false;
+            for (int i = 0; i < outb.length; i++) {
+                if (outb[i] > 0) {
+                    isShow = true;
+                }
+            }
+                return new String(outb, "gb2312");
         } catch (UnsupportedEncodingException e) {
             lasterror = -1012;
             return null;
@@ -1873,10 +1875,16 @@ public class ASyunew6 {
             return lasterror;
         }
         array_in[1] = 0x42;
-        array_in[2] = 0;
-        if (bIsShowU) array_in[2] = 1;
-        array_in[3] = 0;
-        if (bIsSave) array_in[3] = 1;
+        if (bIsShowU) {
+            array_in[2] = 1;
+        } else {
+            array_in[2] = 0;
+        }
+        if (bIsSave) {
+            array_in[3] = 1;
+        } else {
+            array_in[3] = 0;
+        }
         if (mConnection.controlTransfer(0x21, 0x9, 0x0302, 0, array_in, 0x15, 0) < 0) {
             mConnection.close();
             lasterror = -94;

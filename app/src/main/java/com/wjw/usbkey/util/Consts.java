@@ -7,6 +7,4 @@ import com.vondear.rxtool.RxTool;
  */
 public class Consts {
     public static final String ACTION_USB_PERMISSION = RxTool.getContext().getPackageName() + ".USB_PERMISSION";
-
-
 }

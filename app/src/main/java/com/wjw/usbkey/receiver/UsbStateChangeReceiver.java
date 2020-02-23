@@ -62,7 +62,5 @@ public class UsbStateChangeReceiver extends BroadcastReceiver {
             //Log.i(TAG, "onReceive: action=" + action);
             RxToast.showToast("action= " + action);
         }
-
-
     }
 }
